@@ -1,38 +1,83 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.router{
+  background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fit-buttonandtext{
+  width: fit-content;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homeimage{
+  width: auto;
+  height: auto;
+}
+/* .feature_text{
+  width: 600px;
+  height: max-content;
+} */
+.feature_img{
+  height: 250;
+  width: 200;
+  contain: content;
+  
+}
+.Title{
+  font-size: x-large;
+}
+.Price{
+  font-size: xxx-large;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+.Plan{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
 }
+.card{
+  border-radius: 10px;
+  box-shadow: 5px 10px #888888;
+}
+.card:hover{
+  scale: 1.1;
+  margin-top: 10px;
+  box-shadow: 5px 10px #888888;
+  transition:ease-in-out;
+}
+li.List::marker{
+  content: "☑️  ";
+  margin: 1rem;
+}
+.centralise{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card:nth-child(1) .features > li:nth-child(n+5)::marker{
+  content: "✖️  ";
+  margin-right: 20px;
+  opacity: 20%;
+}
+.card:nth-child(2) .features > li:last-child::marker{
+  content: "✖️  ";
+  margin-right: 20px;
+}
+.mar{
+  margin-bottom: 10px;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Cards:nth-child(1) .features > li:nth-child(n+5){
+  opacity: 50%;
 }
+.Cards:nth-child(2) .features > li:last-child{
+  opacity: 50%;
+}
+Button:hover{
+  scale: 1.01;
+  box-shadow: 0 0.5rem 1rem 0 rgba(255, 255, 255, 0.3);
+}
+/*   
+.Cards:hover{
+  scale: 1.01;
+  box-shadow: 0 0.5rem 1rem 0 rgba(255, 255, 255, 0.3);
+} */
