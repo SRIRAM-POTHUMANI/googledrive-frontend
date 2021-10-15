@@ -13,12 +13,12 @@ export default function Signup() {
     password: passWord
   }
   const addUser = () => {
-    fetch("https://googledrive-b262wd.herokuapp.com/users", {
+    fetch("http://localhost:5000/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: ({DATA})
+      body: JSON.stringify({DATA})
     })
   };
 

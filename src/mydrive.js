@@ -1,12 +1,29 @@
+import { useState, useEffect } from 'react';
+
 export function MyDrive() {
-    return(
-        <div className="container">
-        <div class="col-md-12">
-              <img
-                src="https://www.nyongesasande.com/wp-content/uploads/2021/06/google-drive-docs-sheets-slides-logos-100881817-large.jpg"
-                alt="Banner"
-              /></div>
-            </div>
-    );
-    
-}
+ 
+  const [ movies, setMovies ] = useState([]);
+  
+  useEffect(()=>{
+  fetch("https://node-sriram.herokuapp.com/users")
+  .then((data) =>data.json())
+  .then((mvs=>setMovies(mvs)));
+}, []);
+
+    return (
+      <div className="container">
+        {
+          movies.map((movie)=> {
+            return(
+              <div className="moviecontainer">
+                <img className="image" src={movie.pic} />
+                <h2>Firstname : {movie.firstname}</h2>
+                <h2>Lastname: {movie.lastname}</h2>
+                <hr />
+                </div>
+            )
+          })
+        }
+      </div>
+    )
+          }
