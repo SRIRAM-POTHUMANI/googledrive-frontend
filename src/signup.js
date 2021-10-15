@@ -13,12 +13,13 @@ export default function Signup() {
     password: passWord
   }
   const addUser = () => {
+    console.log(DATA);
     fetch("http://localhost:5000/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({DATA})
+      body: JSON.stringify(DATA)
     })
   };
 
@@ -26,9 +27,10 @@ export default function Signup() {
 
   return (
     <div>
-  <form className="container App">
+  <div className="container App">
     <div className="App">
-  <img class="mb-4" src="https://qph.fs.quoracdn.net/main-qimg-d57b15be9168f689001b1bc63e20a5c7-c" alt="logo" width="200" height="150"/>
+      <a href="/Home">
+  <img class="mb-4"  src="https://qph.fs.quoracdn.net/main-qimg-d57b15be9168f689001b1bc63e20a5c7-c" alt="logo" width="200" height="150"/></a>
   <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
   <div class="form-floating mar">
       <input type="text" class="form-control" id="Firstname" placeholder="First Name" onChange={(event) => setfirstName(event.target.value)}/>
@@ -48,13 +50,13 @@ export default function Signup() {
   </div>
 </div>
   <br/>
-  <button class="w-30 btn btn-lg btn-primary" type="submit" onSubmit={()=>addUser}>Sign Up</button>
+  <button class="w-30 btn btn-lg btn-primary" onClick={addUser}>Sign Up</button>
   <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
      <a class="MuiTypography-root MuiTypography-body2 MuiLink-root MuiLink-underlineAlways css-nzlz3j" href="/Login" >
                 Already have an account? Sign in
       </a>
     </div>
-</form>
+</div>
 <button class="w-30 btn btn-lg btn-primary" type="submit" onClick={()=>console.log({DATA})}>check once</button>
 </div>
   );
