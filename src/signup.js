@@ -57,7 +57,7 @@ export default function Signup() {
       </a>
     </div>
 </div>
-<button class="w-30 btn btn-lg btn-primary" type="submit" onClick={()=>console.log({DATA})}>check once</button>
+<button action="Login/my-drive" class="w-30 btn btn-lg btn-primary" type="submit" onClick={()=>console.log({DATA})}>check once</button>
 </div>
   );
 };

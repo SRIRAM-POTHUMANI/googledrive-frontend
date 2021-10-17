@@ -5,6 +5,15 @@ import { HomePage } from "./home";
 export function LoginPage() {
   const [userName, setuserName] = useState("");
   const [passWord, setpassWord] = useState("");
+  const signin = () => {
+    fetch("https://googledrive-b262wd.herokuapp.com/users")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(JSON.stringify(myJson));
+  });
+}
 //   const LoginClick=()=>{
 //       <Router><Link href="/Login/my-drive" class="btn btn-outline-primary me-2">
 //     Login
@@ -25,8 +34,9 @@ export function LoginPage() {
   
   return (
     <div>
-    <form className="container App" action="Login/my-drive"  >
-      <img class="mb-4" src="https://qph.fs.quoracdn.net/main-qimg-d57b15be9168f689001b1bc63e20a5c7-c" alt="logo" width="200" height="150"/>
+    <div className="container App" action="Login/my-drive"  >
+    <a href="/Home">
+<img class="mb-4" src="https://qph.fs.quoracdn.net/main-qimg-d57b15be9168f689001b1bc63e20a5c7-c" alt="logo" width="200" height="150"/></a>
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
   
    
@@ -40,18 +50,19 @@ export function LoginPage() {
   </div>
   
     <br/>
-    {/* <button class="w-30 btn btn-lg btn-primary" type="submit">Sign in</button> <br/>
-     */}
-       <Link to="/my-drive" class="w-30 btn btn-lg btn-primary" type="submit">
+    <button class="w-30 btn btn-lg btn-primary" type="submit" onClick={signin}>Sign in</button> <br/>
+    
+       {/* <Link to="/my-drive" class="w-30 btn btn-lg btn-primary" type="submit">
             Sign-in
-          </Link>    <br/>
+          </Link>    <br/> */}
+          <br />
      
     <a class="MuiTypography-root MuiTypography-body2 MuiLink-root MuiLink-underlineAlways css-nzlz3j"
                 href="/Signup"
               >
                 Don't have an account? Sign Up
               </a>
-  </form>
+  </div>
   {/* <button class="w-30 btn btn-lg btn-primary" type="submit" onClick={LoginClick() }>check once</button> <br/> */}
 
   </div>

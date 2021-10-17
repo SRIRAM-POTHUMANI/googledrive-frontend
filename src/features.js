@@ -28,7 +28,7 @@ export function Features() {
             <div>
               <img
                 src="https://lh3.googleusercontent.com/O7uh86FkoKSeAr1S-e48DidDrRvUJDO9pY-c7e9r-Nm555C4iACq8DoVgj73MpMGOSzKEE7PRXI-VJYMIrNXbYySFNvHzOIPChFCaOPRP37BwzdFCQ=s0"
-                alt="Banner"
+                alt="Banner" 
               />
             </div>
           </div>
@@ -47,29 +47,12 @@ export function Features() {
             <div>
               <p>
                 Drive integrates seamlessly with{" "}
-                <a
-                  href="https://www.google.com/docs/about/"
-                  rel="noopener"
-                  target="_blank"
-                >
                   Docs
-                </a>
                 ,{" "}
-                <a
-                  href="https://www.google.com/sheets/about/"
-                  rel="noopener"
-                  target="_blank"
-                >
                   Sheets
-                </a>
                 , and{" "}
-                <a
-                  href="https://www.google.com/slides/about/"
-                  rel="noopener"
-                  target="_blank"
-                >
+                
                   Slides
-                </a>
                 , cloud-native apps that enable your team to collaborate
                 effectively in real time. Create and share content with your
                 team on Day 1, with no need to migrate from existing tools.
@@ -80,7 +63,7 @@ export function Features() {
             <div>
               <img
                 src="https://lh3.googleusercontent.com/KOWQOT_D7NGb3AlhaXBiU3nGYJ6QwKvVhKsdm6UwiIOS15T4bgx7zynlbanpvU61kFBYBV21-v_PSAG4K3do1zw69lpIT2LiISiH=s0"
-                alt="Banner"
+                alt="Banner"   width="950" height="800"
               />
             </div>
           </div>
@@ -90,7 +73,7 @@ export function Features() {
             <div>
               <img
                 src="https://lh3.googleusercontent.com/vR2eJFKYD-U7QZ1kFojPIUYOQsQ_yHFIioJ3mcwGmdv66FoHvnZUs4wvxxPvm0R1WxedzybK-Y-T0paASaylY9ToogLxlsl-bIgU=s0"
-                alt="Banner"
+                alt="Banner"  width="950" height="800"
               />
             </div>
           </div>
