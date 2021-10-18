@@ -1,6 +1,7 @@
 import "./App.css";
 import { Features } from "./features";
 import { MyDrive } from "./mydrive";
+import { MyDriveUpload } from "./fileupload";
 import { Plans } from "./price";
 import { LoginPage } from './login.js';
 import { HomePage } from "./home";
@@ -72,6 +73,9 @@ function HeadNav() {
         </Route>
         <Route path="/my-drive">
           <MyDrive />
+        </Route>
+        <Route path="/my-drive-upload">
+          <MyDriveUpload />
         </Route>
       </Switch>
     </Router>

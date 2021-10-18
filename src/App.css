@@ -41,7 +41,7 @@
 .card:hover{
   scale: 1.1;
   margin-top: 10px;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 5px 10px hsl(0, 0%, 53%);
   transition:ease-in-out;
 }
 li.List::marker{

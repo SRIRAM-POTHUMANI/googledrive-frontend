@@ -1,0 +1,18 @@
+.viewfile{
+    color:#4287f5;
+    font-weight: bold;
+  }
+  .centralise{
+    align-items: center;
+  }
+  .card{
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+    margin-right: auto;
+  }
+  .card:hover{
+    scale: 1.1;
+    margin-top: 10px;
+    box-shadow: 5px 10px #888888;
+    transition:ease-in-out;
+  }

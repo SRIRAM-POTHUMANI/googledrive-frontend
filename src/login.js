@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { HomePage } from "./home";
 
 export function LoginPage() {
@@ -12,18 +12,9 @@ export function LoginPage() {
   })
   .then(function(myJson) {
     console.log(JSON.stringify(myJson));
+
   });
 }
-//   const LoginClick=()=>{
-//       <Router><Link href="/Login/my-drive" class="btn btn-outline-primary me-2">
-//     Login
-//   </Link>
-//   <Switch>
-//   <Route path="/my-drive">
-//   <HomePage />
-// </Route>
-// </Switch>
-// </Router>};
 
   // useEffect(()=>{
   //   fetch("https://googledrive-b262wd.herokuapp.com/users")
